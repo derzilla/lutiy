@@ -13,7 +13,7 @@ async def saveis(message: types.Message):
 
 	txt = message.text
 	if txt == '/saveis':
-		await message.reply('We must save the Earth from global warming by any means possible, so that we can live better'
+		await message.reply('We must save the Earth from global warming by any means possible, so that we can live better')
 							
 async def main():
 	
