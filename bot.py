@@ -11,10 +11,10 @@ dp = Dispatcher()
 @dp.message
 async def saveis(message: types.Message):
 
-	txt = message.text
-	if txt == '/saveis':
-		await message.reply('We must save the Earth from global warming by any means possible, so that we can live better')
-							
+	buttons = types.ReplyKeyboardMarkup()
+	button1 = types.KeyboardButton('♻Как спасти планету?♻')
+	buttons.add(button1)
+	
 async def main():
 	
 	logging.basicConfig(level=logging.INFO)
